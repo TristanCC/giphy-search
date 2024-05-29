@@ -45,7 +45,7 @@
 
         function search(searchValue) {
             if (searchValue) {
-                fetch(`https://api.giphy.com/v1/gifs/translate?api_key=MPKOxpPu5IhMaxc7mc25Nq9BqMTNzude&s=${searchValue}`, { mode: 'cors' })
+                fetch(`https://api.giphy.com/v1/gifs/translate?api_key=##############KEY_HERE###############&s=${searchValue}`, { mode: 'cors' })
                 .then(response => response.json())
                 .then(response => {
                     if (response.data && response.data.images) {
